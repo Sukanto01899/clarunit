@@ -60,4 +60,42 @@ genesis:
     - signers-voting
     - costs-4
 plan:
-  batches: []
+  batches:
+    - id: 0
+      transactions:
+        - emulated-contract-publish:
+            contract-name: all-annotations
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: "contracts\\all-annotations.clar"
+            clarity-version: 1
+        - emulated-contract-publish:
+            contract-name: bad-annotations
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: "contracts\\bad-annotations.clar"
+            clarity-version: 1
+        - emulated-contract-publish:
+            contract-name: bad-flow
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: "contracts\\bad-flow.clar"
+            clarity-version: 1
+        - emulated-contract-publish:
+            contract-name: no-annotations
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: "contracts\\no-annotations.clar"
+            clarity-version: 1
+        - emulated-contract-publish:
+            contract-name: no-flow
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: "contracts\\no-flow.clar"
+            clarity-version: 1
+        - emulated-contract-publish:
+            contract-name: simple-annotations
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: "contracts\\simple-annotations.clar"
+            clarity-version: 1
+        - emulated-contract-publish:
+            contract-name: simple-flow
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: "contracts\\simple-flow.clar"
+            clarity-version: 1
+      epoch: "2.05"
